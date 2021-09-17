@@ -1,0 +1,99 @@
+.item{
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.item-img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 273px;
+    margin-top: 30px;
+}
+
+.rating{
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    width: 65px;
+    height: 30px;
+    background: #6F64F8;
+}
+
+.rating-and-price,.item-description{
+    width: 90%;
+}
+
+.rating-and-price{
+    margin: 34px auto 16px;
+}
+.item-description{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #2C2C2C;
+}
+
+.item-description h2{
+    font-size: 16px;
+    margin: 0;
+}
+
+.item-description p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.rating img{
+    transform: translateY(0.5px);
+    margin-left: 9px;
+}
+
+.price {
+    font-size: 18px;
+    float: right;
+    line-height: 21px;
+}
+
+.item-buttons div{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    height: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    bottom: 0;
+    display: inline-block;
+}
+
+.wishlist-btn img{
+    transform: translate(-8px,1.5px);
+}
+
+.item-buttons div:hover{
+    cursor: pointer;
+}
+
+.wishlist-btn{
+    background: #EDEDED;
+    border-radius: 0px 0px 0px 8px;
+    color: #000000;
+}
+
+.add-to-cart-btn{
+    background: #6F64F8;
+    border-radius: 0px 0px 8px 0px;
+    color: #ffffff;
+
+}
+
+.add-to-cart-btn img{
+    transform: translate(-8px,3px);
+}
