@@ -1,5 +1,6 @@
 .item{
-    width: 400px;
+    width: 30%;
+    min-width: 21.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
     border-radius: 8px;
     background: #fff;
@@ -10,8 +11,8 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 273px;
-    margin-top: 30px;
+    height: 17rem;
+    margin-top: 1.25rem;
 }
 
 .rating{

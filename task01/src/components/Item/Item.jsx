@@ -3,7 +3,7 @@ import './Item.css';
 
 const Item = (props) => {
     const {img, rating, price, title} = props.obj;
-    console.log(title);
+    console.log("hui");
     return(
         <div className="item">
             <img className="item-img" src={'/img/' + img} alt={title}/>
