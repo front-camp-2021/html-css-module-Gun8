@@ -7,6 +7,14 @@
 body{
   background: #F9F9F9;
 }
+
+.item-list{
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .item{
   width: 30%;
   min-width: 21.5rem;
