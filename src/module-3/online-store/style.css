@@ -359,7 +359,7 @@ body {
 }
 
 .pagination__page-item:hover, .pagination button:hover {
-  background: #DEDEDE;
+  background-color: #DEDEDE;
   z-index: 1;
 }
 
