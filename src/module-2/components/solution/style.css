@@ -134,16 +134,19 @@ a{
   margin-left: 10%;
 }
 
-.filters-radio-list-block{
-  padding-top: 1.188rem;
-  color: #2C2C2C;
-}
-
 .filters-field-name{
   margin: 0;
   font-weight: 600;
   font-size: 1.125rem;
 }
+
+
+.filters-radio-list-block{
+  padding-top: 1.188rem;
+  color: #2C2C2C;
+}
+
+
 
 .filters-content ul{
   font-weight: 300;
