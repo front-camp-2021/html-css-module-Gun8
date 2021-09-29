@@ -2,7 +2,6 @@
 @use '../utils' as *;
 
 %pagination-item-styles{
-  background: $bg-secondary;
   border-radius: 50%;
   height: 2.5rem;
   width: 2.5rem;
@@ -41,6 +40,7 @@
   &__page-item{
     @extend %pagination-item-styles;
     @extend %pagination-item-hover;
+    background: $bg-secondary;
     cursor: pointer;
     margin-left: -0.375rem;
 
@@ -61,9 +61,11 @@
 
   &__prev{
     margin-right: 1rem;
+    background: $bg-secondary url("img/pagination-left.svg") no-repeat center;
   }
 
   &__next{
     margin-left: 1rem;
+    background: $bg-secondary url("img/pagination-right.svg") no-repeat center;
   }
 }
