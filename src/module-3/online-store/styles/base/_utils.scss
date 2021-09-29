@@ -1,0 +1,9 @@
+%vertical-align{
+  display: flex;
+  align-items: center;
+}
+
+@mixin bg-img-centered($url){
+  background: url($url) no-repeat center center;
+  background-size: contain;
+}

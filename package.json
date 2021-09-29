@@ -18,6 +18,9 @@
     "sass": "^1.41.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.1"
+    "bootstrap": "^5.1.1",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp-postcss": "^9.0.1"
   }
 }

@@ -1,16 +1,258 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Store</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <title>Document</title>
 </head>
-
-<body>
-
+<body class="container">
+<!--HEADER-->
+<header class="header">
+  <!--LOGO-->
+  <div class = "logo">
+    <img class="logo__img" src="img/logo.png" alt="logo">
+    <h1 class="logo__name">Online Store</h1>
+  </div>
+  <!--END LOGO-->
+  <!--BREADCRUMB-->
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item"><a href="#"><img src="img/home.svg" alt="home"></a></li>
+    <li class="breadcrumb__item"><a href="#">eCommerce</a></li>
+    <li class="breadcrumb__item breadcrumb__item_cur-page"><a href="#">Electronics</a></li>
+  </ul>
+  <!--END BREADCRUMB-->
+</header>
+<!--END HEADER-->
+<!--FILTERS-->
+<div class="main flex container">
+<div class="filters">
+  <div class="filters-header flex">
+    <h2 class="filters-name">Filters</h2>
+    <button class="filters-hide"></button>
+  </div>
+  <div class="filters-content">
+    <div class="filters-content-container">
+      <div class="filters-radio-list-block">
+        <h3 class="filters-field-name">Multi Range</h3>
+        <ul class="filters-radio-list">
+          <li class="filters-radio-list-item"><span class="circle-img"></span>$10</li>
+          <li class="filters-radio-list-item"><span class="circle-img"></span>$10-$100</li>
+          <li class="filters-radio-list-item"><span class="circle-img"></span>$100-$500</li>
+          <li class="filters-radio-list-item"><span class="circle-img"></span>$500</li>
+          <li class="filters-radio-list-item active"><span class="circle-img active"></span>All</li>
+        </ul>
+      </div>
+      <div class="filters-checkbox-list-block">
+        <h3 class="filters-field-name">Category</h3>
+        <ul class="filters-checkbox-list">
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Cell Phones<span
+            class="item-quantity">1920</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Computers & Tablets<span class="item-quantity">1820</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img active"></span>Cell Phone Accessories<span class="item-quantity">462</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Appliances<span class="item-quantity">6556</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Audio<span class="item-quantity">120</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>iPhone Accessories<span class="item-quantity">353</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Cameras & Camcorders<span class="item-quantity">45</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>iPhone Cases & Clips<span class="item-quantity">456</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>TV & Home Theater<span class="item-quantity">55</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Small Kitchen Appliances<span class="item-quantity">10</span></li>
+        </ul>
+      </div>
+      <div class="filters-checkbox-list-block">
+        <h3 class="filters-field-name">Brands</h3>
+        <ul class="filters-checkbox-list">
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Insigni<span class="item-quantity">220</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Samsung<span class="item-quantity">120</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Apple<span class="item-quantity">320</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>HP<span class="item-quantity">32</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Sony<span class="item-quantity">520</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Metra<span class="item-quantity">55</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Dyne<span class="item-quantity">120</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>LG<span class="item-quantity">98</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Canon<span class="item-quantity">99</span></li>
+          <li class="filters-checkbox-list-item"><span class="square-img"></span>Speck<span class="item-quantity">575</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button class="filters-reset">Clear all filters</button>
+</div>
+<!--ITEM LIST-->
+<div class="item-list-container">
+  <div class="item-list-header flex">
+    <p class="item-list-counter">7,618 results found</p>
+    <button class="item-list-like"></button>
+  </div>
+  <div class="item-list-search">
+    <input type="text" placeholder="Search">
+    <img src="img/search.svg" alt="search">
+  </div>
+  <!--FIRST ITEM-->
+<div class="item-list">
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">3.4</div>
+      <div class="price">$399</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple Watch Series 4 GPS</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--SECOND ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.4</div>
+      <div class="price">$199</div>
+    </div>
+    <div class="item-description">
+      <h2>JBL Speaker</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--THIRD ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.8</div>
+      <div class="price">$899</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple iPhone X 128GB</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--FOURTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.3</div>
+      <div class="price">$459</div>
+    </div>
+    <div class="item-description">
+      <h2>Beats Headphones</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--FIFTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.4</div>
+      <div class="price">$2499</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple Macbook Pro 512GB SSD</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--SIXTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.2</div>
+      <div class="price">$899</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple iPad Pro 64GB</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--SEVENTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.9</div>
+      <div class="price">$399</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple Homepod</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--EIGHTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">3.9</div>
+      <div class="price">$2499</div>
+    </div>
+    <div class="item-description">
+      <h2>JBuds Air Wireless Bluetooth…</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+  <!--NINTH ITEM-->
+  <div class="item">
+    <div class="item-img"></div>
+    <div class="rating-and-price">
+      <div class="rating">4.9</div>
+      <div class="price">$99</div>
+    </div>
+    <div class="item-description">
+      <h2>Apple Magic Mouse</h2>
+      <p>Redesigned from scratch and completely revised</p>
+    </div>
+    <div class="item-buttons">
+      <button>wishlist</button>
+      <button>add to cart</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="pagination flex">
+  <button class="pagination-left"></button>
+  <div class="pagination-numbs">
+    <button class="pagination-page-num">1</button>
+    <button class="pagination-page-num">2</button>
+    <button class="pagination-page-num">3</button>
+    <button class="pagination-page-num">4</button>
+    <button class="pagination-page-num">5</button>
+    <button class="pagination-page-num active">6</button>
+    <button class="pagination-page-num">7</button>
+    <button class="pagination-page-num">8</button>
+    <button class="pagination-page-num">9</button>
+    <button class="pagination-page-num">10</button>
+  </div>
+  <button class="pagination-right"></button>
+</div>
 </body>
-
 </html>
