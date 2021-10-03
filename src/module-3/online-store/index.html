@@ -1,16 +1,571 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Store</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <title>Document</title>
 </head>
-
-<body>
-
+<body class="container">
+<!--HEADER-->
+<header class="header">
+  <!--LOGO-->
+  <div class = "logo">
+    <img class="logo__img" src="img/logo.png" alt="logo">
+    <h1 class="logo__name">Online Store</h1>
+  </div>
+  <!--END LOGO-->
+  <!--BREADCRUMB-->
+  <ul class="breadcrumb">
+    <li class="breadcrumb__item"><a href="#"><img src="img/home.svg" alt="home"></a></li>
+    <li class="breadcrumb__item"><a href="#">eCommerce</a></li>
+    <li class="breadcrumb__item breadcrumb__item_cur-page"><a href="#">Electronics</a></li>
+  </ul>
+  <!--END BREADCRUMB-->
+</header>
+<!--END HEADER-->
+<!--SECTION CATALOG-->
+<section class="catalog">
+  <!--FILTERS-->
+  <aside class="filters">
+    <!--FILTERS HEADER-->
+    <div class="filters__header">
+      <h2 class="filters__name">Filters</h2>
+      <button class="filters__hide-btn">
+        <img src="img/chevrons-left.svg" alt="hide">
+      </button>
+    </div>
+    <!--END FILTERS HEADER-->
+    <!--FILTERS CONTENT-->
+    <div class="filters__content">
+      <!--MULTI RANGE FILTER-->
+      <div class="filters__item">
+        <h3 class="filters__list-name">Multi Range</h3>
+        <ul class="filters__list">
+          <li class="filters__list-item">
+            <input type="radio" name="RadioRange" id="RadioRange1">
+            <label for="RadioRange1">
+              <span class="filters__radio"></span>
+              <span class="filters__val">$10</span>
+            </label>
+          </li>
+          <li class="filters__list-item">
+            <input type="radio" name="RadioRange" id="RadioRange2">
+            <label for="RadioRange2">
+              <span class="filters__radio"></span>
+              <span class="filters__val">$10-$100</span>
+            </label>
+          </li>
+          <li class="filters__list-item">
+            <input type="radio" name="RadioRange" id="RadioRange3">
+            <label for="RadioRange3">
+              <span class="filters__radio"></span>
+              <span class="filters__val">$100-$500</span>
+            </label>
+          </li>
+          <li class="filters__list-item">
+            <input type="radio" name="RadioRange" id="RadioRange4">
+            <label for="RadioRange4">
+              <span class="filters__radio"></span>
+              <span class="filters__val">$500</span>
+            </label>
+          </li>
+          <li class="filters__list-item">
+            <input type="radio" name="RadioRange" id="RadioRange5">
+            <label for="RadioRange5">
+              <span class="filters__radio filters__radio_checked"></span>
+              <span class="filters__val">All</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <!--END MULTI RANGE FILTER-->
+      <!--CATEGORY FILTER-->
+      <div class="filters__item">
+        <h3 class="filters__list-name">Category</h3>
+        <ul class="filters__list">
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory1">
+              <label for="CheckCategory1">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Computers & Tablets</span>
+              </label>
+            </div>
+            <span>1920</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory2">
+              <label for="CheckCategory2">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Computers & Tablets</span>
+              </label>
+            </div>
+            <span>1820</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory3">
+              <label for="CheckCategory3">
+                <span class="filters__checkbox filters__checkbox_checked"></span>
+                <span class="filters__val">Cell Phone Accessories</span>
+              </label>
+            </div>
+            <span>462</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory4">
+              <label for="CheckCategory4">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Appliances</span>
+              </label>
+            </div>
+            <span>6556</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory5">
+              <label for="CheckCategory5">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Audio</span>
+              </label>
+            </div>
+            <span>120</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory6">
+              <label for="CheckCategory6">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">iPhone Accessories</span>
+              </label>
+            </div>
+            <span>353</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory7">
+              <label for="CheckCategory7">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Cameras & Camcorders</span>
+              </label>
+            </div>
+            <span>45</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory8">
+              <label for="CheckCategory8">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">iPhone Cases & Clips</span>
+              </label>
+            </div>
+            <span>456</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory9">
+              <label for="CheckCategory9">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">TV & Home Theater</span>
+              </label>
+            </div>
+            <span>55</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckCategory" id="CheckCategory10">
+              <label for="CheckCategory10">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Small Kitchen Appliances</span>
+              </label>
+            </div>
+            <span>10</span>
+          </li>
+        </ul>
+      </div>
+      <!--END CATEGORY FILTER-->
+      <!--BRAND FILTER-->
+      <div class="filters__item">
+        <h3 class="filters__list-name">Category</h3>
+        <ul class="filters__list">
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand1">
+              <label for="CheckBrand1">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Insigni</span>
+              </label>
+            </div>
+            <span>220</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand2">
+              <label for="CheckBrand2">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Samsung</span>
+              </label>
+            </div>
+            <span>120</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand3">
+              <label for="CheckBrand3">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Apple</span>
+              </label>
+            </div>
+            <span>320</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand4">
+              <label for="CheckBrand4">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">HP</span>
+              </label>
+            </div>
+            <span>32</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand5">
+              <label for="CheckBrand5">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Sony</span>
+              </label>
+            </div>
+            <span>520</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand6">
+              <label for="CheckBrand6">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Metra</span>
+              </label>
+            </div>
+            <span>55</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand7">
+              <label for="CheckBrand7">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Dyne</span>
+              </label>
+            </div>
+            <span>120</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand8">
+              <label for="CheckBrand8">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">LG</span>
+              </label>
+            </div>
+            <span>98</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand9">
+              <label for="CheckBrand9">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Canon</span>
+              </label>
+            </div>
+            <span>99</span>
+          </li>
+          <li class="filters__list-item">
+            <div>
+              <input type="checkbox" name="CheckBrand" id="CheckBrand10">
+              <label for="CheckBrand10">
+                <span class="filters__checkbox"></span>
+                <span class="filters__val">Speck</span>
+              </label>
+            </div>
+            <span>575</span>
+          </li>
+        </ul>
+      </div>
+      <!--END BRAND FILTER-->
+    </div>
+    <!--END FILTERS CONTENT-->
+    <button class="filters__reset-btn">Clear all filters</button>
+  </aside>
+  <!--END FILTERS-->
+  <!--ITEM LIST-->
+  <div class="item-list-container">
+    <!--ITEM LIST HEADER-->
+    <div class="item-list-header">
+      <p class="item-list-header__counter">7,618 results found</p>
+      <button class="item-list-header__like-btn">
+        <img src="img/like.svg" alt="like">
+      </button>
+    </div>
+    <!--END ITEM LIST HEADER-->
+    <!--ITEM LIST SEARCH-->
+    <div class="item-list-search">
+      <input type="text" placeholder="Search">
+      <img src="img/search.svg" alt="search">
+    </div>
+    <!--END ITEM LIST SEARCH-->
+    <!-- ITEM LIST-->
+    <div class="item-list">
+      <!--FIRST ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--SECOND ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--THIRD ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--FOURTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--FIFTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--SIXTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--SEVENTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--EIGHTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    <!--NINTH ITEM-->
+      <div class="item">
+        <div class="item__img"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>3.4</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$399</div>
+        </div>
+        <div class="item__description">
+          <h2>Apple Watch Series 4 GPS</h2>
+          <p>Redesigned from scratch and completely revised</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END ITEM LIST-->
+</section>
+<!--END SECTION CATALOG-->
+<!--PAGINATION-->
+<footer class="pagination">
+  <button class="pagination__prev"></button>
+  <ul class="pagination__list">
+    <li class="pagination__page-item">1</li>
+    <li class="pagination__page-item">2</li>
+    <li class="pagination__page-item">3</li>
+    <li class="pagination__page-item">4</li>
+    <li class="pagination__page-item">5</li>
+    <li class="pagination__page-item pagination__page-item_active">6</li>
+    <li class="pagination__page-item">7</li>
+    <li class="pagination__page-item">8</li>
+    <li class="pagination__page-item">9</li>
+    <li class="pagination__page-item">10</li>
+  </ul>
+  <button class="pagination__next"></button>
+</footer>
+<!--END PAGINATION-->
 </body>
-
 </html>

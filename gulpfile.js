@@ -8,7 +8,9 @@ const srcPath = './src/module-3/online-store/';
 function styles(cb) {
   src(`${srcPath}styles/style.scss`)
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(sass(
+      //{ outputStyle: 'compressed' }
+    ).on('error', sass.logError))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 2 version'],
       cascade: false

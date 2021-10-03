@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #F9F9F9;
+}
+.item{
+  width: 30%;
+  min-width: 21.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.item-img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 17rem;
+  margin-top: 1.25rem;
+}
+
+.rating{
+  display: inline-block;
+  padding-left: 0.625rem;
+  border-radius: 3px;
+  color: white;
+  line-height: 1.875rem;
+  width: 4rem;
+  height: 1.875rem;
+  background: #6F64F8 url("img/star.svg") no-repeat 80% center;
+}
+
+.rating-and-price,.item-description{
+  width: 90%;
+}
+
+.rating-and-price{
+  margin: 2rem auto 1rem;
+}
+.item-description{
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  color: #2C2C2C;
+}
+
+.item-description h2{
+  font-size: 1rem;
+  margin: 0;
+}
+
+.item-description p{
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 0.188rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  float: right;
+  line-height: 1.313rem;
+}
+
+.item-buttons{
+  display: flex;
+}
+
+.item-buttons button{
+  outline: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  width: 50%;
+  height: 2.813rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.813rem;
+  bottom: 0;
+  font-size: 0.75rem;
+}
+
+.item-buttons button:hover{
+  cursor: pointer;
+}
+
+.item-buttons button:nth-child(1){
+  border-radius: 0 0 0 8px;
+  color: #000000;
+  background: #EDEDED url(img/heart.svg) no-repeat 20% center;
+}
+
+.item-buttons button:nth-child(2){
+  border-radius: 0 0 8px 0;
+  color: #ffffff;
+  background: #6F64F8 url(img/shopping-bag.png) no-repeat 10% center;
+}
+
